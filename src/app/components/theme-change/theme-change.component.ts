@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './theme-change.component.css'
 })
 export class ThemeChangeComponent {
-  isDarkMode: boolean = true;
+  isDarkMode: boolean = false;
   toggleTheme(): void {
     if (this.isDarkMode) {
       document.getElementsByTagName('body')[0].classList.remove('dark');

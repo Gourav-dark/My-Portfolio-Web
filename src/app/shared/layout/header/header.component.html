@@ -11,25 +11,24 @@
             {{item.name}}
         </span>
     </div>
-    <!-- Theme Toggle -->
-     <div class="hidden md:flex">
+    <div class="flex justify-between items-center gap-5 z-10">
+         <!-- Theme Toggle -->
          <app-theme-change></app-theme-change>
-     </div>
-    <!-- Menu Button for smaller screens -->
-    <div class="flex justify-between items-center gap-5 pr-4 md:hidden z-10 dark:text-gray-500">
-        <app-theme-change></app-theme-change>
-        <span class="cursor-pointer" (click)="toggleMenu()">
-            <svg *ngIf="!sidenav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-            </svg>
-            <svg *ngIf="sidenav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-        </span>
+        <!-- Menu Button for smaller screens -->
+        <div class="md:hidden dark:text-gray-500">
+            <span class="cursor-pointer" (click)="toggleMenu()">
+                <svg *ngIf="!sidenav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+                <svg *ngIf="sidenav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </span>
+        </div>
     </div>
     <!-- Sliding Menu for smaller screens -->
     <div [ngClass]="{'translate-x-full': !sidenav, 'translate-x-0': sidenav}" 
-            class="fixed top-16 right-0 w-3/4 h-screen bg-gradient-to-b from-indigo-600 to-indigo-400 dark:from-black dark:to-gray-800 dark:text-gray-500 transform transition-transform duration-300 md:hidden">
+            class="fixed top-16 right-0 w-3/4 h-screen bg-gradient-to-b from-indigo-600 to-indigo-400 dark:from-black dark:to-gray-800 dark:text-gray-500 transform transition-transform duration-300 md:hidden border-t-2 border-white dark:border-gray-700">
         <span *ngFor="let item of Menu" class="block px-4 cursor-pointer capitalize py-4 text-xl font-medium dark:text-gray-500 hover:scale-105 duration-200 hover:bg-indigo-500 dark:hover:bg-black hover:shadow-sm dark:hover:shadow-gray-800">
             {{item.name}}
         </span>
