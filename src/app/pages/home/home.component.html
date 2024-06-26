@@ -1,25 +1,51 @@
-<div name="home" class="md:h-screen h-1/2 w-full bg-gradient-to-t from-indigo-300 dark:from-gray-700 flex justify-center items-center">
-    <div class="flex justify-between items-center w-full p-10">
-        <div class="">
-            <h1>Hello</h1>
-            <h1>Gourav Sharma</h1>
-        </div>
+<div name="home" class="w-full h-screen bg-gradient-to-t from-indigo-300 dark:from-gray-950">
+    <div class="w-full h-full flex flex-col md:flex-row justify-center items-center">
         <!-- Image -->
-        <div class="">
-            <img src="https://placehold.jp/300x400.png"/>
+        <div class="flex w-[65%] sm:w-[55%] md:w-[65%]">
+            <img class="h-fit" src="images/heromain.png"/>
         </div>
-    </div>
-    <!-- LINK FOR ANOTHER profile -->
-    <div class="flex flex-row">
-        <span>
-            <img class="hidden dark:block" src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png"/>
-            <img class="block dark:hidden" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
-        </span>
-        <span>
-            <img src="assets/Icons/linkedin.png" alt="LinkedIn Icon"/>
-            <img src="assets/Icons/social.png" alt="Social Icon"/>
-        </span>
-        <span></span>
-        <span></span>
+        <div class="flex flex-col justify-center px-4">
+            <h2 class="text-4xl md:text-5xl text-center md:text-left font-bold dark:text-white bg-gradient-to-r from-purple-600 via-indigo-500 to-red-400 inline-block text-transparent bg-clip-text">
+                I'm a Full Stack Developer
+            </h2>
+            <p class="text-gray-900 dark:text-gray-200 py-4 md:max-w-[70%] px-5">
+                I have 2 years of experience building and desgining software.
+                Currently, I love to work on web application technologies like
+                Angular, Tailwind CSS and .NET Core.
+            </p>
+            <!-- link Icon -->
+            <div class="w-full flex justify-center md:justify-start pb-2">
+                <div class="flex flex-row justify-around gap-2 bg-gray-300 rounded-md p-2">
+                    <span class="w-10 rounded-full hover:scale-110 hover:shadow-sm cursor-pointer duration-200">
+                        <img class="object-cover w-full h-full block dark:hidden" src="icons/linkedin.png" alt="LinkedIn Icon"/>
+                        <img class="object-cover w-full h-full hidden dark:block" src="icons/linkedindark.png" alt="LinkedIn Icon"/>
+                    </span>
+                    <span class="w-10 rounded-full hover:scale-110 hover:shadow-sm cursor-pointer duration-200">
+                        <img class="object-cover w-full h-full block dark:hidden" src="icons/mail.png" alt="Mail Icon"/>
+                        <img class="object-cover w-full h-full hidden dark:block" src="icons/maildark.png" alt="Email Icon"/>
+                    </span>
+                    <span class="w-10 rounded-full hover:scale-110 hover:shadow-md cursor-pointer duration-200">
+                        <img class="object-cover w-full h-full block dark:hidden" src="icons/github.png" alt="Mail Icon"/>
+                        <img class="object-cover w-full h-full hidden dark:block" src="icons/githubdark.png" alt="Email Icon"/>
+                    </span>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="flex flex-row gap-5 w-full justify-center md:justify-start md:mt-5">
+                <button class="text-white w-fit px-6 py-3 my-2 flex gap-1 items-center rounded-md bg-gradient-to-r from-purple-500 to-blue-500">
+                    Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button class="text-white w-fit px-6 py-3 my-2 flex gap-1 items-center rounded-md bg-gradient-to-r from-blue-500 to-indigo-700">
+                    Resume
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>                              
+                </button>
+            </div>
+        </div>
+        
     </div>
 </div>

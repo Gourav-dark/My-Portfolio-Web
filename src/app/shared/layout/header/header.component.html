@@ -7,7 +7,7 @@
     </div>
     <!-- Menu for larger screens -->
     <div class="hidden md:flex">
-        <span *ngFor="let item of Menu" class="px-4 cursor-pointer capitalize font-medium dark:text-gray-500 hover:scale-105 duration-200">
+        <span *ngFor="let item of Menu" class="px-4 cursor-pointer capitalize font-medium text-indigo-300 dark:text-gray-500 hover:text-white dark:hover:text-white hover:scale-105 duration-200">
             {{item.name}}
         </span>
     </div>
@@ -29,7 +29,7 @@
     <!-- Sliding Menu for smaller screens -->
     <div [ngClass]="{'translate-x-full': !sidenav, 'translate-x-0': sidenav}" 
             class="fixed top-16 right-0 w-3/4 h-screen bg-gradient-to-b from-indigo-600 to-indigo-400 dark:from-black dark:to-gray-800 dark:text-gray-500 transform transition-transform duration-300 md:hidden border-t-2 border-white dark:border-gray-700">
-        <span *ngFor="let item of Menu" class="block px-4 cursor-pointer capitalize py-4 text-xl font-medium dark:text-gray-500 hover:scale-105 duration-200 hover:bg-indigo-500 dark:hover:bg-black hover:shadow-sm dark:hover:shadow-gray-800">
+        <span *ngFor="let item of Menu" class="block px-4 cursor-pointer capitalize py-4 text-xl font-medium text-indigo-300 dark:text-gray-500 hover:scale-105 duration-300 hover:bg-indigo-500 dark:hover:bg-gray-900 hover:shadow-sm dark:hover:shadow-gray-600 hover:text-white dark:hover:text-white">
             {{item.name}}
         </span>
     </div>
