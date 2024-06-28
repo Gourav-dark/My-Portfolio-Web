@@ -14,7 +14,7 @@ export class HeaderComponent {
   public Menu: IMenu[] = [
     { id: 1, name: "Home", url: '' },
     { id: 2, name: "Project", url: 'project' },
-    { id: 3, name: "About", url: '#about' },
+    { id: 3, name: "Skills", url: '#skills' },
     { id: 4, name: "Expricence", url: '#expricence' },
     { id: 5, name: "contact", url: '#contact' }
   ];

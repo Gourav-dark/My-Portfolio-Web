@@ -1,1 +1,19 @@
-<p>skills works!</p>
+<div name="skills" class="p-4 bg-indigo-300 dark:bg-slate-600 flex md:flex-row flex-col justify-center items-center">
+    <div class="flex w-full md:w-1/5 justify-center pb-3">
+        <h3 class="text-6xl px-4 font-bold bg-gradient-to-r from-purple-700 via-indigo-600 to-red-500 inline-block text-transparent bg-clip-text dark:text-white">
+            Skills:
+        </h3>
+    </div>
+    <div class="w-full md:w-4/5 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-2">
+        @for (item of skillIcons; track $index) {
+            <div class="p-2 bg-white dark:bg-gray-400 rounded-md flex flex-col justify-center items-center">
+                <span class="p-1">
+                    <img class="h-full w-full" src={{item.url}} alt="HTML Icon"/>
+                </span>
+                <p class="py-2 font-bold bg-gradient-to-r from-red-600 to-blue-600 rounded-md w-full text-center text-white">
+                    {{item.name}}
+                </p>
+            </div>
+        }
+    </div>
+</div>
