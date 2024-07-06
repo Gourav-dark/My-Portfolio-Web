@@ -46,11 +46,14 @@ export class ContactComponent {
     const { name, email, phone, message } = this.contactForm.value;
     this.contactService.postData(name as string, email as string, phone as string, message as string).subscribe(
       response => {
-        console.log('POST response:', response);
+        // console.log('POST response:', response);
         this.responseMessage=true;
+        setTimeout(()=>{
+          this.responseMessage=false;
+        },2000)
       },
       error => {
-        console.error('Error posting data:', error);
+        // console.error('Error posting data:', error);
       }
     );
     this.contactForm.reset();

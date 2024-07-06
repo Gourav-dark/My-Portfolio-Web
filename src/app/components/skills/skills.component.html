@@ -11,7 +11,7 @@
         @for (item of skillIcons; track $index) {
             <div class="p-2 bg-white dark:bg-gray-400 rounded-md flex flex-col justify-center items-center">
                 <span class="p-1">
-                    <img class="h-full w-full" src={{item.url}} alt="HTML Icon"/>
+                    <img class="h-full w-full" src={{item.url}} alt={{item.alt}}/>
                 </span>
                 <p class="py-2 font-bold bg-gradient-to-r from-slate-700 to-blue-700 rounded-md w-full text-center text-white">
                     {{item.name}}

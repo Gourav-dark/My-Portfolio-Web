@@ -15,7 +15,7 @@ export class SkillsComponent {
     {url:"skillicons/html.png",name:"HTML",alt:"HTML Icons"},
     {url:"skillicons/css.png",name:"CSS",alt:"CSS Icons"},
     {url:"skillicons/react.png",name:"React",alt:"React Icons"},
-    {url:"skillicons/javascript.png",name:"JavaScript",alt:"Icons"},
+    {url:"skillicons/javascript.png",name:"JavaScript",alt:"Javascript Icons"},
     {url:"skillicons/sql-server.png",name:"SQL Server",alt:"SQL Server Icons"},
     {url:"skillicons/git.png",name:"git",alt:"git Icons"},
     {url:"skillicons/tailwind-css.png",name:"TailWind CSS",alt:"Tailwind Icons"},

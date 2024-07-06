@@ -7,11 +7,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { PageLoaderComponent } from './components/page-loader/page-loader.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,HomeComponent,SkillsComponent,ExperienceComponent,ContactComponent,PageLoaderComponent,FooterComponent],
+  imports: [RouterOutlet,HeaderComponent,HomeComponent,SkillsComponent,ExperienceComponent,ContactComponent,PageLoaderComponent,FooterComponent,ProjectComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
