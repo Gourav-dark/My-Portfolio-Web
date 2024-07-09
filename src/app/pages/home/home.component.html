@@ -1,7 +1,7 @@
-<div id="home" class="w-full h-screen bg-gradient-to-b from-indigo-200 dark:from-gray-950 flex md:justify-end md:items-end">
-    <div class="w-full md:h-[95%] flex flex-col md:flex-row justify-center items-center">
+<div id="home" class="w-full h-screen bg-gradient-to-b from-indigo-400 to-indigo-100 dark:from-gray-800 dark:to-gray-900 flex md:justify-end md:items-end">
+    <div class="w-full h-[95%] flex flex-col md:flex-row justify-center items-center">
         <!-- Image -->
-        <div class="h-1/2 md:w-1/2 md:h-full">
+        <div class="h-1/3 sm:1/2 md:w-1/2 md:h-full">
             <img class="h-full w-full" src="images/heroimage.png"/>
         </div>
         <div class="md:w-1/2 flex flex-col justify-center px-4">
@@ -42,7 +42,8 @@
             </div>
             <!-- button -->
             <div class="flex flex-row gap-5 w-full justify-center md:justify-start md:mt-5">
-                <button class="text-white w-fit px-6 py-3 my-2 flex gap-1 items-center rounded-md bg-gradient-to-r from-purple-500 to-blue-500">
+                <button class="text-white w-fit px-6 py-3 my-2 flex gap-1 items-center rounded-md bg-gradient-to-r from-purple-500 to-blue-500" 
+                    (click)="scrollToSection('project')">
                     Project
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />

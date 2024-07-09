@@ -10,34 +10,34 @@ import { Component } from '@angular/core';
 export class ProjectComponent {
   public projects:project[]=[
     {
-      name:"Project Name",
-      url:"Host LINK",
-      codeLink:"Git HUB LINK",
-      imageUrl:["https://media.licdn.com/dms/image/C4D12AQG9jwW2Jm0Z2g/article-cover_image-shrink_600_2000/0/1623897312913?e=2147483647&v=beta&t=rvDzCYn3eXtJNl245Y-yczlDkLbKBjRz55iItzZUib0","httpcode"]
+      name:"Responsive Site", 
+      url:"",
+      codeLink:"",
+      imageUrl:"projects/pro01.png"
     },
     {
-      name:"Project Name",
-      url:"Host LINK",
-      codeLink:"Git HUB LINK",
-      imageUrl:["https://images.milanote.com/milanote/752a997a-9d50-474d-b4d7-745540f0a4b4_website-design-plan-example.png?auto=compress%2Cformat&w=1800","httpcode"]
+      name:"E-Book Site",
+      url:"",
+      codeLink:"",
+      imageUrl:"projects/pro02.png"
     },
     {
-      name:"Project Name",
-      url:"Host LINK",
-      codeLink:"Git HUB LINK",
-      imageUrl:["https://media.licdn.com/dms/image/C4D12AQG9jwW2Jm0Z2g/article-cover_image-shrink_600_2000/0/1623897312913?e=2147483647&v=beta&t=rvDzCYn3eXtJNl245Y-yczlDkLbKBjRz55iItzZUib0","httpcode"]
+      name:"Medicine X",
+      url:"",
+      codeLink:"",
+      imageUrl:"projects/pro04.png"
     },
     {
-      name:"Project Name",
-      url:"Host LINK",
-      codeLink:"Git HUB LINK",
-      imageUrl:["https://images.milanote.com/milanote/752a997a-9d50-474d-b4d7-745540f0a4b4_website-design-plan-example.png?auto=compress%2Cformat&w=1800","httpcode"]
-    }
+      name:"Student Details portal",
+      url:"",
+      codeLink:"",
+      imageUrl:"projects/pro03.png"
+    },
   ];
 }
 interface project{
   name:string,
   url:string,
   codeLink:string
-  imageUrl:string[]
+  imageUrl:string
 }
