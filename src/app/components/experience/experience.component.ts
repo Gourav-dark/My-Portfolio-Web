@@ -23,17 +23,20 @@ export class ExperienceComponent {
   public expri=[
     {
       postion:"Programmer Analyst Trainee",
-      company:"Cognizant Technology Solutions Ltd.",
+      company: "Cognizant Technology Solutions Ltd.",
+      about:"",
       year:"Sept 2023 - Present"
     },
     {
       postion:"FSE Intern",
-      company:"Cognizant Technology Solutions Ltd.",
+      company: "Cognizant Technology Solutions Ltd.",
+      about:"Specializing in ASP.NET Core backend with SQL Server and React frontend development.",
       year:"Feb 2023 - july 2023"
     },
     {
       postion:"internship",
-      company:"Ardent Computech Pvt. Ltd.",
+      company: "Ardent Computech Pvt. Ltd.",
+      about:"Proficient in HTML, CSS, and JavaScript.",
       year:"jan 2022 - April 2022"
     },
   ]

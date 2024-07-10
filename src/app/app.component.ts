@@ -17,5 +17,5 @@ import { ProjectComponent } from './components/project/project.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'My-Portfolio-Web';
+  title = 'Gourav Sharma';
 }
